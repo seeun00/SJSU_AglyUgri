@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    android:clickable="true"
+    tools:context=".MainActivity7">
+
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="409dp"
+        android:layout_height="60dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/quest15"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center|center_vertical"
+        android:text="01\nSelect the size of box"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBar" />
+
+    <TextView
+        android:id="@+id/extra15"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Click the box"
+        android:textColor="@color/sub5"
+        app:layout_constraintEnd_toEndOf="@+id/quest15"
+        app:layout_constraintStart_toStartOf="@+id/quest15"
+        app:layout_constraintTop_toBottomOf="@+id/quest15" />
+
+    <ImageView
+        android:id="@+id/bigBox5"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:clickable="true"
+        android:focusable="auto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/extra15"
+        app:srcCompat="@drawable/bigbox" />
+
+    <ImageView
+        android:id="@+id/smallBox5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="120dp"
+        android:clickable="true"
+        android:focusable="auto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/extra15"
+        app:srcCompat="@drawable/smallbox" />
+
+    <TextView
+        android:id="@+id/smallText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Small\n(for 1~2 per)"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/sub4"
+        app:layout_constraintEnd_toEndOf="@+id/smallBox5"
+        app:layout_constraintStart_toStartOf="@+id/smallBox5"
+        app:layout_constraintTop_toBottomOf="@+id/smallBox5" />
+
+    <TextView
+        android:id="@+id/bigText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="Big\n(for 3~4 per)"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/sub4"
+        app:layout_constraintEnd_toEndOf="@+id/bigBox5"
+        app:layout_constraintStart_toStartOf="@+id/bigBox5"
+        app:layout_constraintTop_toBottomOf="@+id/bigBox5" />
+
+    <ImageView
+        android:id="@+id/exitBtn15"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBar"
+        app:srcCompat="@drawable/btn_exit" />
+
+    <ImageView
+        android:id="@+id/nextBtn15"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBar"
+        app:srcCompat="@drawable/btn_next" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
